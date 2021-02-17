@@ -13,7 +13,7 @@ class BookController extends Controller
         $users = json_decode(json_encode($users), true);
         //dd($users);
 
-        $query = Book::paginate(10);
+        $query = Book::get();
 
         $data = [
             'status' => 200,
